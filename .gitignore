@@ -1,0 +1,61 @@
+# ---- generated outputs (keep the empty folder only)
+outputs/*
+!outputs/.gitkeep
+logs/
+*.log
+
+# ---- model weights / checkpoints / caches (never commit; downloaded from Hugging Face)
+models/
+checkpoints/
+cache/
+hf_cache/
+.cache/
+huggingface/
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.gguf
+*.onnx
+
+# ---- images / large data (outputs belong in outputs/)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.npz
+*.npy
+*.tar
+*.tar.gz
+*.zip
+
+# ---- test / benchmark artifacts (not part of this deployment repo)
+benchmark*/
+text_rendering_test/
+ocr/
+figures/
+cases/
+test_images/
+
+# ---- python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# ---- secrets / local config
+.env
+.env.*
+*.key
+*.pem
+id_rsa*
+
+# ---- editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

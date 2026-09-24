@@ -1,0 +1,11 @@
+{
+  "model_id": "Qwen/Qwen-Image-2.1",
+  "model_revision": "790c92633540aa0cb11d9abf19eb46d861714758",
+  "width": 2048,
+  "height": 2048,
+  "num_inference_steps": 40,
+  "true_cfg_scale": 1.0,
+  "use_kv_cache": true,
+  "offload": "model",
+  "vae_tiling": true
+}

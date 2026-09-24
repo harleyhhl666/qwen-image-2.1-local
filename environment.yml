@@ -1,0 +1,9 @@
+# conda env create -f environment.yml     (then: conda activate qwen_image_21)
+name: qwen_image_21
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -r requirements.txt

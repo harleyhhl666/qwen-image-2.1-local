@@ -1,0 +1,20 @@
+[
+  {
+    "id": "example_001_street",
+    "prompt": "A candid street photograph of an old bookstore on a quiet lane in autumn, warm afternoon light, a bicycle leaning against the window, realistic photo.",
+    "seed": 1001,
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "id": "example_002_cn_poster",
+    "prompt": "一张简洁的中文活动海报，米白色背景，顶部是醒目的黑色大字标题“秋季读书会”，标题下方写着日期“2026年10月18日”，画面中央是一摞书和一杯热茶的插画，排版整洁，文字清晰。",
+    "seed": 1002
+  },
+  {
+    "id": "example_003_en_poster",
+    "prompt": "A minimalist concert poster with a deep blue background and a glowing moon. Large white title \"MOONLIGHT SESSIONS\" at the top, and below it \"Live Jazz · Friday 8 PM\" in a thin sans-serif font.",
+    "width": 1792,
+    "height": 2400
+  }
+]

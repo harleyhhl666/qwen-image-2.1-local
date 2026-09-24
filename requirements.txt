@@ -1,0 +1,24 @@
+# Qwen-Image-2.1 local deployment — verified working set (RTX 3090, driver 535 / CUDA 12.2, Python 3.11)
+# Install torch FIRST from the PyTorch cu126 index (see README), then:  pip install -r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.14.0+cu126
+torchvision==0.29.0+cu126
+# pinned transitive torch deps (otherwise pip picks newer patch releases than the verified env)
+cuda-bindings==12.9.7
+cuda-pathfinder==1.6.0
+
+# Diffusers: Qwen-Image-2.1 (QwenImage21Pipeline) is NOT in any PyPI release yet (latest PyPI 0.40.0 lacks it).
+# Pinned to the exact GitHub main commit that was verified: e0118ade2f60234c41bacf40330a7e2f61108849 (0.41.0.dev0).
+# Tarball URL instead of git+https so it also works where `git clone github.com` is blocked.
+diffusers @ https://codeload.github.com/huggingface/diffusers/tar.gz/e0118ade2f60234c41bacf40330a7e2f61108849
+
+transformers==5.17.0
+accelerate==1.15.0
+safetensors==0.8.0
+huggingface_hub[hf_xet]==1.32.0
+pillow==12.3.0
+numpy==2.4.6
+
+# resource monitoring written into metadata (GPU util / memory, process RAM)
+psutil==7.2.2
+nvidia-ml-py==13.610.43
